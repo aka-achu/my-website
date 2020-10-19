@@ -1,18 +1,26 @@
+import React from "react"
 import Layout from "@components/layout"
 import Home from "@components/home"
 import About from "@components/about"
 import Contact from "@components/contact"
+import { usePageContext } from "@context/current-page-context"
 
 export default function IndexPage() {
+  const { page } = usePageContext()
+
+  let CurrentPage = Home
+  if (page === "home") {
+    CurrentPage = Home
+  } else if (page === "about") {
+    CurrentPage = About
+  } else if (page === "contact") {
+    CurrentPage = Contact
+  }
+
   return (
     <Layout>
       <div className="py-20">
-        {/* <h1 className="text-5xl text-center text-accent-1">
-          Next.js + Tailwind CSS
-        </h1> */}
-        {/* <Home /> */}
-        {/* <About /> */}
-        <Contact />
+        <CurrentPage />
       </div>
     </Layout>
   )

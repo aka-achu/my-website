@@ -1,31 +1,37 @@
 import Link from "next/link"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { usePageContext } from "@context/current-page-context"
 
 const navLinks = [
   {
     key: "home",
     href: "#",
     label: "Home",
+    page: "home",
   },
   {
     key: "about",
     href: "#",
     label: "About",
+    page: "about",
   },
   {
     key: "skills",
     href: "#",
     label: "Skills",
+    page: "skills",
   },
   {
     key: "resume",
     href: "#",
     label: "Resume",
+    page: "resume",
   },
   {
     key: "contact",
     href: "#",
     label: "Contact",
+    page: "contact",
   },
 ]
 
@@ -39,14 +45,24 @@ const socialLinks = [
 ]
 
 export default function Nav() {
+  const { page: contextPage, setPage } = usePageContext()
   return (
     <nav>
       <div className="flex justify-between items-center p-8">
         <ul className="flex justify-between items-center space-x-4">
-          {navLinks.map(({ href, label, key }) => (
+          {navLinks.map(({ href, label, key, page }) => (
             <li key={key}>
               <Link href={href}>
-                <a className="text-red-500 no-underline uppercase font-semibold">
+                <a
+                  className={`${
+                    contextPage === page ? "text-red-500" : "text-white"
+                  } no-underline uppercase font-semibold`}
+                  onClick={() => {
+                    if (page) {
+                      setPage(page)
+                    }
+                  }}
+                >
                   {label}
                 </a>
               </Link>
