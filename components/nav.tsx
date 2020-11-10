@@ -48,7 +48,7 @@ export default function Nav() {
   const { page: contextPage, setPage } = usePageContext()
   return (
     <nav>
-      <div className="flex justify-between items-center p-8">
+      <div className="flex justify-between items-center py-8">
         <ul className="flex justify-between items-center space-x-4">
           {navLinks.map(({ href, label, key, page }) => (
             <li key={key}>

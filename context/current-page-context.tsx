@@ -8,7 +8,7 @@ interface ContextType {
 const CurrentPageContext = React.createContext<ContextType>(null)
 CurrentPageContext.displayName = "CurrentPageContext"
 
-export type PageType = "home" | "about" | "contact"
+export type PageType = "home" | "about" | "contact" | "skills"
 
 function CurrentPageProvider(props) {
   const [page, setPage] = React.useState<PageType | string>("home")
