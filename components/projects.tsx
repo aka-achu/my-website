@@ -11,7 +11,7 @@ export default function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="bg-gray-900 text-white flex mb-4 w-full h-full">
+            <div className="bg-gray-1 text-white flex mb-4 w-full h-full">
               <div className="w-full  flex justify-start p-4 flex-col cursor-pointer">
                 <div className="font-semibold font-mono text-lg">Eidos</div>
                 <div className="font-sans py-2">
@@ -24,7 +24,7 @@ export default function Projects() {
           </a>
         </div>
         <div className="sm:w-full lg:w-1/2 px-2">
-          <div className="bg-gray-900 text-white flex mb-4 w-full h-full">
+          <div className="bg-gray-1 text-white flex mb-4 w-full h-full">
             <div className="w-full flex justify-start p-4 flex-col">
               <div className="font-semibold font-mono text-lg">Watcher</div>
               <div className="font-sans py-2">

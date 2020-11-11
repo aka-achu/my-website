@@ -24,7 +24,7 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <div className="py-20">
+      <div className="pt-20">
         <CurrentPage />
       </div>
     </Layout>

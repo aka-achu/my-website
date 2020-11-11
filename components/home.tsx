@@ -25,7 +25,7 @@ function RightPane() {
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-between  h-full px-8">
+    <div className="flex items-center justify-between h-full px-8">
       <div className="h-full text-white">
         <LeftPane />
       </div>

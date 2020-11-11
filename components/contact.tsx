@@ -1,9 +1,13 @@
 export default function Contact() {
   return (
-    <div className="flex">
+    <div className="flex pb-20">
       <div className="w-1/2 flex m-auto text-white">
         <div className="flex w-full">
-          <div className="flex-1 text-2xl font-semibold">Just Say Hello!</div>
+          <div className="flex-1 text-2xl font-semibold">
+            <div className="text-center">Wanna Say Hello!</div>
+            <div className="text-center">Or</div>
+            <div className="text-center">Want my resume?</div>
+          </div>
           <div className="flex-1 m-auto">
             <img src="/images/arrow.png" alt="arrow" />
           </div>
