@@ -22,10 +22,10 @@ const navLinks = [
     page: "skills",
   },
   {
-    key: "resume",
+    key: "projects",
     href: "#",
-    label: "Resume",
-    page: "resume",
+    label: "Projects",
+    page: "projects",
   },
   {
     key: "contact",

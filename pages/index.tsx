@@ -1,7 +1,8 @@
-import Layout from "@components/layout"
-import Home from "@components/home"
 import About from "@components/about"
 import Contact from "@components/contact"
+import Home from "@components/home"
+import Layout from "@components/layout"
+import Projects from "@components/projects"
 import Skills from "@components/skills"
 import { usePageContext } from "@context/current-page-context"
 
@@ -17,6 +18,8 @@ export default function IndexPage() {
     CurrentPage = Contact
   } else if (page === "skills") {
     CurrentPage = Skills
+  } else if (page === "projects") {
+    CurrentPage = Projects
   }
 
   return (
