@@ -1,4 +1,7 @@
 # Tailwind CSS example
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project.
 
@@ -27,3 +30,23 @@ This example is a basic starting point for using [Tailwind CSS](https://tailwind
 - [postcss-preset-env](https://preset-env.cssdb.org/) - Adds stage 2+ features and autoprefixes
 
 To control the generated stylesheet's filesize, this example uses Tailwind CSS' [`purge` option](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to remove unused CSS.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/aka-achu"><img src="https://avatars0.githubusercontent.com/u/61797154?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Achyuta Das</b></sub></a><br /><a href="#design-aka-achu" title="Design">🎨</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
