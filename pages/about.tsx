@@ -5,7 +5,7 @@ export default function About() {
         <div className="h-full text-white w-1/2">
           <div className="text-3xl">-About Me</div>
           <div className="mt-8 font-semibold text-justify">
-            I am a passionate and creative developer with a strong interest in
+            A passionate and creative developer with a strong interest in
             golang and Cloud-Native technologies and proven experience in
             architecting, creating, deploying, managing distributed applications
             and infrastructure management.
