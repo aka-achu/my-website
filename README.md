@@ -1,6 +1,6 @@
 # Tailwind CSS example
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is an example of using [Tailwind CSS](https://tailwindcss.com) in a Next.js project.
@@ -41,6 +41,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/aka-achu"><img src="https://avatars0.githubusercontent.com/u/61797154?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Achyuta Das</b></sub></a><br /><a href="#design-aka-achu" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/tsuki42"><img src="https://avatars2.githubusercontent.com/u/22864071?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sudhanshu</b></sub></a><br /><a href="https://github.com/aka-achu/my-website/commits?author=tsuki42" title="Code">💻</a></td>
   </tr>
 </table>
 
