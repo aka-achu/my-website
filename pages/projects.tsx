@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div>
+    <div className="h-full">
       <div className="text-white px-2 font-medium mb-4 text-lg">
         Checkout some of my personal projects
       </div>

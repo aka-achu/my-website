@@ -1,32 +1,43 @@
-import About from "@components/about"
-import Contact from "@components/contact"
-import Home from "@components/home"
-import Layout from "@components/layout"
-import Projects from "@components/projects"
-import Skills from "@components/skills"
-import { usePageContext } from "@context/current-page-context"
+import { useRouter } from "next/router"
 
-export default function IndexPage() {
-  const { page } = usePageContext()
-
-  let CurrentPage = Home
-  if (page === "home") {
-    CurrentPage = Home
-  } else if (page === "about") {
-    CurrentPage = About
-  } else if (page === "contact") {
-    CurrentPage = Contact
-  } else if (page === "skills") {
-    CurrentPage = Skills
-  } else if (page === "projects") {
-    CurrentPage = Projects
-  }
-
+function LeftPane() {
+  const router = useRouter()
   return (
-    <Layout>
-      <div className="pt-20">
-        <CurrentPage />
+    <>
+      <div className="text-3xl">-Hello</div>
+      <div className="text-5xl font-bold">I'm Achyuta Das</div>
+      <div className="text-red-500 text-right">(aka achu)</div>
+      <button
+        className="bg-red-500 font-bold py-2 px-4 mt-16"
+        onClick={() => router.push("/about")}
+      >
+        Let's start
+      </button>
+    </>
+  )
+}
+
+function RightPane() {
+  return (
+    <>
+      <img
+        src="/images/user.jpg"
+        alt="user image"
+        className="rounded-full w-3/5 h-3/5"
+      />
+    </>
+  )
+}
+
+export default function Home() {
+  return (
+    <div className="flex items-center justify-between h-full px-8">
+      <div className="h-full text-white">
+        <LeftPane />
       </div>
-    </Layout>
+      <div className="h-full text-white flex justify-center">
+        <RightPane />
+      </div>
+    </div>
   )
 }

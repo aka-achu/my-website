@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="flex pb-20">
+    <div className="flex pb-20 h-full">
       <div className="w-1/2 flex m-auto text-white">
         <div className="flex w-full">
           <div className="flex-1 text-2xl font-semibold">

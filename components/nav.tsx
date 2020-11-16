@@ -1,35 +1,35 @@
 import Link from "next/link"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
-import { usePageContext } from "@context/current-page-context"
+import { useRouter } from "next/router"
 
 const navLinks = [
   {
     key: "home",
-    href: "#",
+    href: "/",
     label: "Home",
     page: "home",
   },
   {
     key: "about",
-    href: "#",
+    href: "/about",
     label: "About",
     page: "about",
   },
   {
     key: "skills",
-    href: "#",
+    href: "/skills",
     label: "Skills",
     page: "skills",
   },
   {
     key: "projects",
-    href: "#",
+    href: "/projects",
     label: "Projects",
     page: "projects",
   },
   {
     key: "contact",
-    href: "#",
+    href: "/contact",
     label: "Contact",
     page: "contact",
   },
@@ -44,10 +44,11 @@ const socialLinks = [
   { href: "https://github.com/aka-achu", label: "Github", icon: FaGithub },
 ]
 
-export default function Nav() {
-  const { page: contextPage, setPage } = usePageContext()
+export default function Nav({ className = "" }) {
+  const router = useRouter()
+
   return (
-    <nav>
+    <nav className={`sticky top-0 z-10 bg-black ${className}`}>
       <div className="flex justify-between items-center py-8">
         <ul className="flex justify-between items-center space-x-4">
           {navLinks.map(({ href, label, key, page }) => (
@@ -55,13 +56,8 @@ export default function Nav() {
               <Link href={href}>
                 <a
                   className={`${
-                    contextPage === page ? "text-red-500" : "text-white"
+                    router.pathname === href ? "text-red-500" : "text-white"
                   } no-underline uppercase font-semibold`}
-                  onClick={() => {
-                    if (page) {
-                      setPage(page)
-                    }
-                  }}
                 >
                   {label}
                 </a>

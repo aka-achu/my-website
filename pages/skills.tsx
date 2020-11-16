@@ -4,7 +4,7 @@ function Image({ src, link }: { src: string; link: string }) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
       <div className="w-10 h-10 bg-white rounded-full">
-        <div className="w-full h-full rounded-full cursor-pointer">
+        <div className="w-full h-full rounded-full cursor-pointer image-mask">
           <NextImage
             src={src}
             className="object-scale-down object-center h-full w-full"
@@ -47,7 +47,7 @@ function SkillBar({
 
 export default function Skills() {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap h-full">
       <div className="sm:w-full lg:w-1/2 px-2">
         <SkillBar
           name="Languages"

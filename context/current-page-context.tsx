@@ -1,3 +1,8 @@
+/**
+ * This isn't being currently used as the components
+ * have been split into their own separate pages
+ */
+
 import * as React from "react"
 
 interface ContextType {
